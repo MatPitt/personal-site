@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MP - Personal Site
 
-## Getting Started
+Sitio personal de Mateo Pitarch. Portfolio y CV con información profesional, experiencia, proyectos y formas de contacto.
 
-First, run the development server:
+## Contenido
+- Página principal (app/page.tsx): hero, experiencia profesional, proyectos destacados, skills y contacto.
+- Página de proyectos (opcional): `/projects` (app/projects/page.tsx) con grid de cards, previsualizaciones y links a live/GitHub.
+- Componentes UI en `components/ui/` (Badge, Card, Button, etc.).
+- Activos estáticos en `public/`:
+  - `public/images/` → imágenes de proyectos (ej. `juliCocinaLogo.png`, `particlesLogo.png`)
+  - `public/logos/` → logos de empresas
+  - `public/profile.JPG` → foto de perfil
+  - `public/resume.pdf` → CV descargable
 
+## Cómo ejecutar (desarrollo)
+1. Abre terminal y ve al proyecto:
+```bash
+cd /Users/mateopitarch/Coding/personal-site
+```
+2. Instala dependencias (si hace falta):
+```bash
+npm install
+```
+3. Ejecuta en modo desarrollo:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+4. Abre `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cómo actualizar proyectos y imágenes
+- Edita el array `ProjectsProjects` o `portfolioProjects` en `app/page.tsx` (o crea/edita `app/projects/page.tsx`).
+- Para usar imágenes locales coloca los archivos en `public/images/` y en el campo `image` usa rutas relativas: `/images/nombre.png`.
+- Asegura que los nombres y extensiones respeten mayúsculas/minúsculas (macOS case-insensitive a veces, pero producción puede fallar).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Recomendación de estilo para las imágenes en cards:
+- Clase CSS sugerida: `className="w-full h-40 md:h-48 object-contain bg-white p-3 transition-transform duration-500 group-hover:scale-105"`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Troubleshooting rápido
+- No ves cambios: guarda archivos, reinicia servidor (Ctrl+C → `npm run dev`) y limpia cache del navegador (Cmd+Shift+R).
+- Errores de compilación: revisa la terminal donde corre Next.js.
+- Imágenes que no cargan: confirma `public/images/<archivo>` exista y ruta en código empiece con `/images/...`.
 
-## Learn More
+## Personalización rápida
+- Título de la pestaña y meta: `app/layout.tsx` (export const metadata).
+- Navbar y secciones: `app/page.tsx`.
+- Crear nueva página: `app/<ruta>/page.tsx`.
 
-To learn more about Next.js, take a look at the following resources:
+## Contacto
+- LinkedIn / GitHub: actualiza los links en la cabecera o botones.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licencia
+Proyecto personal. Añade `LICENSE` si deseas publicar con una licencia (ej. MIT).
