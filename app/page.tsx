@@ -71,7 +71,7 @@ export default function PersonalWebsite() {
       description: "Tool to compare and equalize ad metrics between different ad platforms.",
       image: "/images/metricsLogo.png",
       liveUrl: "https://v0-modern-dashboard-design-eight-tau.vercel.app/",
-      tech: ["TypeScript", "Next.js", "MongoDB"],
+      tech: ["TypeScript", "Next.js", "v0"],
     },
   ]
 
@@ -83,10 +83,8 @@ export default function PersonalWebsite() {
     "Spring Boot",
     "PostgreSQL",
     "MongoDB",
-    "Redis",
     "AWS",
-    "Docker",
-    "Kubernetes",
+    "Docker",,
     "Microservices",
     "REST APIs",
     "GraphQL",
@@ -208,7 +206,7 @@ export default function PersonalWebsite() {
       {/* Projects Section */}
       <section id="Projects" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">Some of my Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {ProjectsProjects.map((project, index) => (
               <Card
