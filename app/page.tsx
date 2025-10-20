@@ -67,11 +67,10 @@ export default function PersonalWebsite() {
       tech: ["React", "Node.js", "v0"],
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management with real-time updates.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      liveUrl: "https://taskmaster-app.com",
-      githubUrl: "https://github.com/mateopitarch/task-manager",
+      title: "Ads Metrics Equalizer",
+      description: "Tool to compare and equalize ad metrics between different ad platforms.",
+      image: "/images/metricsLogo.png",
+      liveUrl: "https://v0-modern-dashboard-design-eight-tau.vercel.app/",
       tech: ["TypeScript", "Next.js", "MongoDB"],
     },
   ]
@@ -93,6 +92,8 @@ export default function PersonalWebsite() {
     "GraphQL",
     "System Design",
     "CI/CD",
+    "v0",
+    "AI Integrations",
   ]
 
   return (
@@ -110,7 +111,7 @@ export default function PersonalWebsite() {
                 Experience
               </a>
               <a href="#Projects" className="text-gray-300 hover:text-white transition-colors">
-                Projects
+                Some of my Projects
               </a>
               <a href="#skills" className="text-gray-300 hover:text-white transition-colors">
                 Skills
@@ -141,9 +142,9 @@ export default function PersonalWebsite() {
               <span>Buenos Aires, Argentina</span>
             </div>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Experienced software engineer specializing in backend development with a passion for building robust apps
-              and innovative technology solutions. Proven track record at leading companies including DevRev, Salesforce,
-              MercadoLibre, MuleSoft, and JP Morgan, delivering scalable systems that serve millions of users worldwide.
+              Experienced software engineer specializing in backend development with a passion for building and technology. I have worked in different areas, roles and industries, always looking to deliver value and learn. I love building, creating and contributing to
+              innovative technology solutions. I worked in different places including DevRev, Salesforce,
+              MercadoLibre, MuleSoft, and JP Morgan
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
